@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+/* Configurações Gerais */
+body {
+    background-color: black;
+}
+
+h1 {
+    font-family: 'Manrope', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}
+
+/* Configurações Do Menu */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    font-family: 'Gill Sans', sans-serif;
+    color: white;
+    font-size: 100%;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+a:link, a:visited, a:active {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+	color: black;
+	background: white;
+}
+
+/* Configurações Das Fotos Expostas na Pagina 'Trabalhos' */
+.fotos{
+    display: inline-block;
+}
+
+.fotos img{
+    width: 30%;
+    padding: 22px;
+}
