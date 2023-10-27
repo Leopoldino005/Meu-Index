@@ -1,14 +1,21 @@
 @charset "UTF-8";
+@font-face{
+    font-family: 'Monsserat regular';
+    src: url(fontes/Montserrat-Regular.ttf) format('truetype');
+   }
+@font-face{
+    font-family: 'Monsserat bold';
+    src: url(fontes/Montserrat-SemiBold.ttf) format('truetype');
+   }
 
 /* Configurações Gerais */
 body {
     background-color: black;
 }
 
-h1 {
-    font-family: 'Manrope', sans-serif;
+h1{
+    font-family: 'Monsserat bold', sans-serif;
     color: white;
-    text-align: center;
 }
 
 img {
@@ -16,26 +23,26 @@ img {
 }
 
 /* Configurações Do Menu */
-nav{
+header{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-nav ul{
+header ul{
     list-style: none;
 }
 
-nav ul li{
+header ul li{
     display: inline-block;
 }
 
-nav ul li a{
-    font-family: 'Gill Sans', sans-serif;
+header ul li a{
+    font-family: 'Monsserat Regular', sans-serif;
     color: white;
     font-size: 100%;
     text-decoration: none;
-    padding: 15px 20px;
+    padding: 8px 20px;
 }
 
 a:link, a:visited, a:active {
@@ -43,6 +50,8 @@ a:link, a:visited, a:active {
 }
 
 a:hover {
+    transition: .5s;
+    box-shadow: 0 0 3px 5px white;
 	text-decoration: none;
 	color: black;
 	background: white;
@@ -50,10 +59,24 @@ a:hover {
 
 /* Configurações Das Fotos Expostas na Pagina 'Trabalhos' */
 .fotos{
-    display: inline-block;
+    display: flex;
+    justify-content: space-around;
+    width:100%;
 }
 
 .fotos img{
-    width: 30%;
-    padding: 22px;
+    width: 32%;
 }
+
+section{
+    border: 1px solid white;
+    padding-bottom: 22px;
+}
+
+.title {
+    font-family: 'Monsserat bold', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 32px;
+}
+
